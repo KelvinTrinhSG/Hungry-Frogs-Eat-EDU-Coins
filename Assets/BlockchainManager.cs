@@ -14,7 +14,7 @@ public class BlockchainManager : MonoBehaviour
     public Text description;
     public string Address { get; private set; }
 
-    private string NFTSmartContractAddress = "0xa323C6Ec663Cbf85b7DEbb5D78AE511Eb929Bb66";
+    private string NFTSmartContractAddress = "0xefF4f99e18CD6379234C14924A0D1C7967316e52";
 
     // Start is called before the first frame update
     private void ResetAllButton()
@@ -29,7 +29,7 @@ public class BlockchainManager : MonoBehaviour
         buttonShop.interactable = true;
         buttonBlockchain.interactable = true;
 
-        description.text = "Please help the poor little frog find ETH Base coins";
+        description.text = "Please help the poor little frog find EDU coins";
     }
 
     public async void Login()
@@ -49,7 +49,7 @@ public class BlockchainManager : MonoBehaviour
         }
         else
         {
-            description.text = "Please help the poor little frog find ETH Base coins";
+            description.text = "Please help the poor little frog find EDU coins";
             buttonNFTTokenGate.gameObject.SetActive(false);
             buttonStartGame.gameObject.SetActive(true);
             buttonShop.gameObject.SetActive(true);
@@ -66,6 +66,6 @@ public class BlockchainManager : MonoBehaviour
         buttonStartGame.gameObject.SetActive(true);
         buttonShop.gameObject.SetActive(true);
         buttonBlockchain.gameObject.SetActive(true);
-        description.text = "Please help the poor little frog find ETH Base coins";
+        description.text = "Please help the poor little frog find EDU coins";
     }
 }
